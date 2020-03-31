@@ -5,6 +5,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="NetCoreWebAPI.Domain\bin\**" />
+    <Compile Remove="NetCoreWebAPI.Domain\obj\**" />
+    <Compile Remove="NetCoreWebAPI.Repository\bin\**" />
+    <Compile Remove="NetCoreWebAPI.Repository\obj\**" />
+    <Content Remove="NetCoreWebAPI.Domain\bin\**" />
+    <Content Remove="NetCoreWebAPI.Domain\obj\**" />
+    <Content Remove="NetCoreWebAPI.Repository\bin\**" />
+    <Content Remove="NetCoreWebAPI.Repository\obj\**" />
+    <EmbeddedResource Remove="NetCoreWebAPI.Domain\bin\**" />
+    <EmbeddedResource Remove="NetCoreWebAPI.Domain\obj\**" />
+    <EmbeddedResource Remove="NetCoreWebAPI.Repository\bin\**" />
+    <EmbeddedResource Remove="NetCoreWebAPI.Repository\obj\**" />
+    <None Remove="NetCoreWebAPI.Domain\bin\**" />
+    <None Remove="NetCoreWebAPI.Domain\obj\**" />
+    <None Remove="NetCoreWebAPI.Repository\bin\**" />
+    <None Remove="NetCoreWebAPI.Repository\obj\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
